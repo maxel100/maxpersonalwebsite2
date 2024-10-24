@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Hertan – Entrepreneur & Life Optimizer in LA</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Max Hertan – Entrepreneur & Life Optimizer in LA</h1>
+
+      <p><span class="section-title">About Max:</span> I'm an entrepreneur, creator, and highly extroverted Australian living in LA. I'm obsessive about efficiency, health, happiness, ai and fun.</p>
+      
+      <p>Currently, I manage a venture studio, co-creating companies with ambitious founders, driving growth, and amplifying value. I've successfully launched and scaled businesses like Megaphone Marketing, Silvi, Snowball, Vids, and Alto Studios.</p>
+
+      <p><span class="section-title">What I've Built:</span></p>
+      <ul>
+        <li><strong>Megaphone Marketing</strong> (SOLD): From $0 to $20M/year, acquired in 2023</li>
+        <li><strong>Silvi (now Argie)</strong>: Reached $1M/month in 7 months</li>
+        <li><strong>Snowball</strong> (SCALING): Scaling fast 👀</li>
+        <li><strong>Vids</strong>: $1M+ ARR within 6 months</li>
+        <li><strong>Alto Studios</strong> (SOLD): $1M ARR in 6 months</li>
+      </ul>
+      
+      <p>I'm passionate about working with creators and entrepreneurs to build amazing, high-value businesses. I love scaling teams, lead generation, sales, marketing, ai, brand, strategy, and more.</p>
+
+      <p><span class="section-title">Media:</span> Some of my favorite podcast interviews include:</p>
+      <ul>
+        <li><a href="https://findingfounders.co/episodes/max-hertan" target="_blank" rel="noopener">My story</a></li>
+        <li><a href="https://podcasters.spotify.com/pod/show/megaminds/episodes/Hacking-Your-Daily-Efficiency--Constant-Reflection--Learning-Any-Skill-In-A-Month--2-Minute-Meals-e17n4qv/a-a6ijr2d" target="_blank" rel="noopener">Hacking Daily Efficiency</a></li>
+        <li><a href="https://www.youtube.com/watch?v=fB22SSc2nHs" target="_blank" rel="noopener">Happiness & Integrity</a></li>
+      </ul>
+
+      <p><span class="section-title">Random:</span></p>
+      <ul>
+        <li><a href="https://www.youtube.com/@MaxsMonthlyChallenge" target="_blank" rel="noopener">Max's Monthly Challenge</a>: For 3 years I learned a new skill every month including - salsa dancing, violin, Spanish, backflip, etc…</li>
+        <li><a href="https://www.instagram.com/p/BzeFnJEnJPu/" target="_blank" rel="noopener">Ninja Warrior</a>: in 2020 achieved a 10 year life dream of competing on Ninja Warrior. I didn't do well.</li>
+        <li><a href="https://www.youtube.com/watch?v=MIsxyBx3tAY&pp=2AEAkAIB" target="_blank" rel="noopener">Flesh eating bacteria</a>: I got a very rare case of buruli ulcer that ripped through my skin. It took ~6 months to heal.</li>
+        <li><a href="https://www.rejuvenationolympics.com/dunedin-pace" target="_blank" rel="noopener">Biohacking</a>: I scored 0.69 for my speed of aging placing my 7th in the world in the Rejuvenation Olympics. My 80-20 to biohacking coming soon.</li>
+      </ul>
+
+      <p><span class="section-title">Thoughts:</span> Coming soon.</p>
+      
+      <div class="social-links">
+        <p>Follow Max Hertan on:</p>
+        <a href="https://www.linkedin.com/in/maxwellhertan/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/maxhertan" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://www.instagram.com/maxhertan" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </main>
+
+    <script>
+      function createRocket() {
+        const rocket = document.createElement('div');
+        rocket.className = 'rocket';
+        rocket.textContent = '🚀';
+        document.body.appendChild(rocket);
+        
+        rocket.addEventListener('animationend', () => {
+          rocket.remove();
+        });
+      }
+
+      function createLightning() {
+        const lightning = document.createElement('div');
+        lightning.className = 'lightning';
+        document.body.appendChild(lightning);
+        
+        lightning.addEventListener('animationend', () => {
+          lightning.remove();
+        });
+      }
+
+      // Create a rocket every 5-15 seconds
+      function scheduleNextRocket() {
+        const delay = Math.random() * 10000 + 5000; // Random delay between 5-15 seconds
+        setTimeout(() => {
+          createRocket();
+          scheduleNextRocket();
+        }, delay);
+      }
+
+      // Create lightning every 20-30 seconds
+      function scheduleNextLightning() {
+        const delay = Math.random() * 10000 + 20000; // Random delay between 20-30 seconds
+        setTimeout(() => {
+          createLightning();
+          scheduleNextLightning();
+        }, delay);
+      }
+
+      scheduleNextRocket();
+      scheduleNextLightning();
+    </script>
+  </body>
+</html>
